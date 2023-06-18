@@ -1,25 +1,42 @@
 import { describe, expect, test } from "@jest/globals";
 import { NewStatusHandlers } from "./NewStatusHandlers.ts";
 import {
-  statusContentMalarkeyLevels,
+  statusContentMagicGoolsball,
+  statusContentMalarkeyLevel,
+  statusContentNoMagicGoolsball,
   statusContentNoMalarkeyLevel,
 } from "../Test/TestData/Mastodon.testdata.ts";
-
 
 describe("New Status Handlers", () => {
   describe("Malarkey Level", () => {
     describe('status.content contains "malarkey level"', () => {
-      test("StatusContainsMalarkeyLevelCommand Should return true", async () => {
-        expect(NewStatusHandlers.StatusContainsMalarkeyLevelCommand(statusContentMalarkeyLevels[0])).toBeTruthy();
-        expect(NewStatusHandlers.StatusContainsMalarkeyLevelCommand(statusContentMalarkeyLevels[1])).toBeTruthy();
-        expect(NewStatusHandlers.StatusContainsMalarkeyLevelCommand(statusContentMalarkeyLevels[2])).toBeTruthy();
+      test("StatusContainsMalarkeyLevelCommand Should return true", () => {
+        statusContentMalarkeyLevel.forEach((status) => {
+          expect(NewStatusHandlers.StatusContainsMalarkeyLevelCommand(status)).toBeTruthy();
+        });
       });
     });
     describe('status.content does not contains "malarkey level"', () => {
-      test("StatusContainsMalarkeyLevelCommand should return false", async () => {
-        expect(NewStatusHandlers.StatusContainsMalarkeyLevelCommand(statusContentNoMalarkeyLevel[0])).toBeFalsy();
-        expect(NewStatusHandlers.StatusContainsMalarkeyLevelCommand(statusContentNoMalarkeyLevel[1])).toBeFalsy();
-        expect(NewStatusHandlers.StatusContainsMalarkeyLevelCommand(statusContentNoMalarkeyLevel[2])).toBeFalsy();
+      test("StatusContainsMalarkeyLevelCommand should return false", () => {
+        statusContentNoMalarkeyLevel.forEach((status) => {
+          expect(NewStatusHandlers.StatusContainsMalarkeyLevelCommand(status)).toBeFalsy();
+        });
+      });
+    });
+  });
+  describe("Magic Goolsball", () => {
+    describe('status.content contains "magic goolsball"', () => {
+      test("StatusContainsMalarkeyLevelCommand should return false", () => {
+        statusContentMagicGoolsball.forEach((status) => {
+          expect(NewStatusHandlers.StatusContainsMagicGoolsballCommand(status)).toBeTruthy();
+        });
+      });
+    });
+    describe('status.content doesn\'t contain "magic goolsball"', () => {
+      test("StatusContainsMalarkeyLevelCommand should return false", () => {
+        statusContentNoMagicGoolsball.forEach((status) => {
+          expect(NewStatusHandlers.StatusContainsMagicGoolsballCommand(status)).toBeFalsy();
+        });
       });
     });
   });

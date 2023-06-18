@@ -47,19 +47,24 @@ export const account: mastodon.v1.Account = {
   lastStatusAt: "",
   roles: [],
 };
-export const statusContentMalarkeyLevels: mastodon.v1.Status[] = [
+export const statusContentMalarkeyLevel: mastodon.v1.Status[] = [
   createStatusWithContent("some content with MALARKEY LEVEL in it"),
   createStatusWithContent("some content with MaLARkEy leVeL in it"),
   createStatusWithContent("some content with malarkey level in it"),
 ];
 export const statusContentNoMalarkeyLevel: mastodon.v1.Status[] = [
-  createStatusWithContent(
-    "some content that doesn't have a dreaded malarKEYLevel in it"
-  ),
-  createStatusWithContent(
-    "some content that doesn't have a dreaded malARey level in it"
-  ),
-  createStatusWithContent(
-    "some content that doesn't have a dreaded MAR LAR KEY LEV EL in it"
-  ),
+  createStatusWithContent("some content that doesn't have a dreaded malarKEYLevel in it"),
+  createStatusWithContent("some content that doesn't have a dreaded malARey level in it"),
+  createStatusWithContent("some content that doesn't have a dreaded MAR LAR KEY LEV EL in it"),
+];
+
+export const statusContentMagicGoolsball: mastodon.v1.Status[] = [
+  createStatusWithContent("some content with MAGIC GOOLSBALL in it"),
+  createStatusWithContent("some content with MaGIc GooLSbALl in it"),
+  createStatusWithContent("some content with magic goolsball in it"),
+];
+export const statusContentNoMagicGoolsball: mastodon.v1.Status[] = [
+  createStatusWithContent("some content that doesn't have a dreaded magicgoolsball in it"),
+  createStatusWithContent("some content that doesn't have a dreaded magc goolsball in it"),
+  createStatusWithContent("some content that doesn't have a dreaded MA GI CG OO LS BA LL in it"),
 ];

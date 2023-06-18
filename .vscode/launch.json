@@ -1,0 +1,13 @@
+{
+  "configurations": [
+    {
+      "name": "Launch via NPM",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run-script", "start"],
+      "port": 5858
+    }
+  ]
+}
