@@ -8,12 +8,13 @@
     "build": "tsc",
     "start": "npx ts-node --esm main.ts"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "OtherwiseJunk",
+  "license": "MIT",
   "dependencies": {
     "masto": "^5.11.3"
   },
   "devDependencies": {
+    "jest": "^29.5.0",
     "ts-node": "^10.9.1"
   }
 }
