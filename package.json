@@ -1,0 +1,19 @@
+{
+  "name": "deepstatets",
+  "version": "1.0.0",
+  "description": "A Mastodon bot for Neoliber.al",
+  "main": "main.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "npx ts-node --esm main.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "masto": "^5.11.3"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  }
+}
