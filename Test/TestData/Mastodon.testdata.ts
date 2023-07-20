@@ -78,8 +78,8 @@ export const statusContentStateFacts: mastodon.v1.Status[] = [
   createStatusWithContent('some content with state "facts" in it'),
 ];
 export const statusContentNoStateFacts: mastodon.v1.Status[] = [
-  createStatusWithContent("some content that doesn't have a dreaded state fact in it"),
+  createStatusWithContent("some content that doesn't have a dreaded state foct in it"),
   createStatusWithContent("some content that doesn't have a dreaded states fact in it"),
-  createStatusWithContent('some content that doesn\'t have a dreaded state "fact" in it'),
+  createStatusWithContent('some content that doesn\'t have a dreaded state "foct" in it'),
   createStatusWithContent('some content that doesn\'t have a dreaded states "fact" in it'),
 ];

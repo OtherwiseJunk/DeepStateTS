@@ -17,4 +17,5 @@ const stream = await mastodonUtilities.getLocalTimelineStream();
 stream.on("update", (status: mastodon.v1.Status) => {
   NewStatusHandlers.MalarkeyLevel(status, mastodonUtilities);
   NewStatusHandlers.MagicGoolsball(status, mastodonUtilities);
+  NewStatusHandlers.StateFacts(status, mastodonUtilities);
 });
