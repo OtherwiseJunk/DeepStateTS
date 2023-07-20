@@ -15,3 +15,9 @@ Deep State will respond to all messages in our local feed containing `malarkey l
 
 Deep State will respond to all messages in our local feed containing `magic goolsball` with a level reading and image attachment:
 ![image](https://github.com/OtherwiseJunk/DeepStateTS/assets/4574230/ae70e1d0-7532-41cb-b7c4-cabe45b88cfc)
+
+### State "Facts"
+
+Deep State will respond to all messages in our local feed containing 'State Facts" with a random state "fact".
+
+Deep

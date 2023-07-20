@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "npx ts-node --esm main.ts"
+    "start": "npx ts-node --esm main.ts",
+    "test:watch": "jest --watch --silent=false"
   },
   "author": "OtherwiseJunk",
   "license": "MIT",

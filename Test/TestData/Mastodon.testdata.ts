@@ -68,3 +68,18 @@ export const statusContentNoMagicGoolsball: mastodon.v1.Status[] = [
   createStatusWithContent("some content that doesn't have a dreaded magc goolsball in it"),
   createStatusWithContent("some content that doesn't have a dreaded MA GI CG OO LS BA LL in it"),
 ];
+
+export const statusContentStateFacts: mastodon.v1.Status[] = [
+  createStatusWithContent("some content with STATE FACTS in it"),
+  createStatusWithContent("some content with StAtE FaCtS in it"),
+  createStatusWithContent("some content with state facts in it"),
+  createStatusWithContent('some content with STATE "FACTS" in it'),
+  createStatusWithContent('some content with StAtE "FaCtS" in it'),
+  createStatusWithContent('some content with state "facts" in it'),
+];
+export const statusContentNoStateFacts: mastodon.v1.Status[] = [
+  createStatusWithContent("some content that doesn't have a dreaded state fact in it"),
+  createStatusWithContent("some content that doesn't have a dreaded states fact in it"),
+  createStatusWithContent('some content that doesn\'t have a dreaded state "fact" in it'),
+  createStatusWithContent('some content that doesn\'t have a dreaded states "fact" in it'),
+];
