@@ -11,5 +11,6 @@ export const stateFacts: string[] = [
   "Did you know that Texans enjoy the highest vibrational state of all US Citizens? Citizens of the state are born resonating at 24Hz, compared to the average 5Hz of most US Citizens, and will often reach 720Hz by the time they start High School.",
   "Did you know that Connecticut doesn't exist?",
   "Did you know that Maine and Oregon are connected via portal? First created in 1849, Professor Rebecca Hercule's portals are housed in Portland Oregon and Portland Maine.",
-  "The Pony Express, Oregon Trail, Santa Fe Trail, Road Paved With Good Intentions That Leads Into The Maw Of The Earth And Descends Forever And Ever And Ever, and California Trail all began in Missouri.",
+  "Did you know that Missouri's eponymous river was one of the main routes for the westward expansion of the US? The Pony Express, Oregon Trail, Santa Fe Trail, Road Paved With Good Intentions That Leads Into The Maw Of The Earth And Descends Forever And Ever And Ever, and California Trail all began in Missouri.",
+  "Did you know that since joining the United States Alaska has been loosely under military governance? To this day the highest ranking government official in Alaska is seven star General Elizabeth Peratrovich",
 ];
